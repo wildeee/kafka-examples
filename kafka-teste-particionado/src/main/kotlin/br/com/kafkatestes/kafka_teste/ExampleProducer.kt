@@ -9,11 +9,11 @@ class ExampleProducer(
 ) {
     fun sendMessages() {
         for (i in 1..10) {
-            kafkaTemplate.send("topic-a", "Mensagem para o tópico A $i")
+            kafkaTemplate.send("topic-c", (i % 3), (i % 3).toString(), "Mensagem para o tópico C $i")
         }
 
         for (i in 1..10) {
-            kafkaTemplate.send("topic-b", "Mensagem para o tópico B $i")
+            kafkaTemplate.send("topic-d", (i % 3), (i % 3).toString(), "Mensagem para o tópico D $i")
         }
     }
 }
