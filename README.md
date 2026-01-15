@@ -1,10 +1,13 @@
 # Exemplos de uso do kafka + spring boot 3
 
 #### Antes de mais nada, você deve subir um kafka. Crie os tópicos com a seguinte configuração
-topic-a: 1 partição, 1 fator de replicação
-topic-b: 1 partição, 1 fator de replicação
-topic-c: 3 partições, 1 fator de replicação
-topic-d: 3 partições, 1 fator de replicação
+
+<ul>
+  <li>topic-a: 1 partição, 1 fator de replicação</li>
+  <li>topic-b: 1 partição, 1 fator de replicação</li>
+  <li>topic-c: 3 partições, 1 fator de replicação</li>
+  <li>topic-d: 3 partições, 1 fator de replicação</li>
+</ul>
 
 #### Para facilitar subir o docker, estou deixando na raiz desse projeto um docker compose com zookeeper, kafka, e kafdrop.
 
